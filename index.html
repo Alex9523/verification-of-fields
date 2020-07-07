@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/1373c7299b233cd6f8b0360251dd7cac.jpg" alt="Card">
+        <div class="information">
+            <label><p>Card number</p><br>
+                <input id="number" onkeyup="checkNumber(event)" type="text" required maxlength="19"
+                    placeholder="Enter your card number">
+            </label>
+            <label><p>Expiration date</p><br>
+                <select id="month" name="month">
+                </select>
+                <select id="year" name="year">
+                </select>
+            </label>
+            <label><p>CVV</p><br>
+                <input id="cvv" onkeyup="checkCVV(event)" type="text" required maxlength="3" placeholder="CVV">
+            </label>
+        </div>
+        <button onclick="btn()">Submit</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
